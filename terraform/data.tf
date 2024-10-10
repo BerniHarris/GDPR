@@ -7,7 +7,7 @@ data "terraform_remote_state" "gdpr_state" {
   backend = "s3"
 
   config = {
-    bucket = "tf-state-gdpr-obfuscator-test"  
+    bucket = "tf-state-gdpr-obfuscator"  
     key    = "tf-state"                  
     region = "eu-west-2"   
   }
